@@ -43,6 +43,9 @@ namespace WinFormsApp1
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.radioButtonLINQ = new System.Windows.Forms.RadioButton();
+            this.radioButtonSAX = new System.Windows.Forms.RadioButton();
+            this.radioButtonDOM = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,38 +195,78 @@ namespace WinFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(214, 345);
+            this.button1.Location = new System.Drawing.Point(225, 377);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(111, 29);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "Пошук";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(49, 344);
+            this.button2.Location = new System.Drawing.Point(15, 377);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.Size = new System.Drawing.Size(143, 29);
             this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
+            this.button2.Text = "Трансформувати ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // radioButtonLINQ
+            // 
+            this.radioButtonLINQ.AutoSize = true;
+            this.radioButtonLINQ.Location = new System.Drawing.Point(3, 314);
+            this.radioButtonLINQ.Name = "radioButtonLINQ";
+            this.radioButtonLINQ.Size = new System.Drawing.Size(63, 24);
+            this.radioButtonLINQ.TabIndex = 14;
+            this.radioButtonLINQ.TabStop = true;
+            this.radioButtonLINQ.Text = "LINQ";
+            this.radioButtonLINQ.UseVisualStyleBackColor = true;
+            this.radioButtonLINQ.CheckedChanged += new System.EventHandler(this.radioButtonLINQ_CheckedChanged);
+            // 
+            // radioButtonSAX
+            // 
+            this.radioButtonSAX.AutoSize = true;
+            this.radioButtonSAX.Location = new System.Drawing.Point(126, 314);
+            this.radioButtonSAX.Name = "radioButtonSAX";
+            this.radioButtonSAX.Size = new System.Drawing.Size(57, 24);
+            this.radioButtonSAX.TabIndex = 15;
+            this.radioButtonSAX.TabStop = true;
+            this.radioButtonSAX.Text = "SAX";
+            this.radioButtonSAX.UseVisualStyleBackColor = true;
+            this.radioButtonSAX.CheckedChanged += new System.EventHandler(this.radioButtonSAX_CheckedChanged);
+            // 
+            // radioButtonDOM
+            // 
+            this.radioButtonDOM.AutoSize = true;
+            this.radioButtonDOM.Location = new System.Drawing.Point(242, 314);
+            this.radioButtonDOM.Name = "radioButtonDOM";
+            this.radioButtonDOM.Size = new System.Drawing.Size(65, 24);
+            this.radioButtonDOM.TabIndex = 16;
+            this.radioButtonDOM.TabStop = true;
+            this.radioButtonDOM.Text = "DOM";
+            this.radioButtonDOM.UseVisualStyleBackColor = true;
+            this.radioButtonDOM.CheckedChanged += new System.EventHandler(this.radioButtonDOM_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.radioButtonDOM);
+            this.Controls.Add(this.radioButtonSAX);
+            this.Controls.Add(this.radioButtonLINQ);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "XML";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -243,6 +286,9 @@ namespace WinFormsApp1
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RadioButton radioButtonLINQ;
+        private System.Windows.Forms.RadioButton radioButtonSAX;
+        private System.Windows.Forms.RadioButton radioButtonDOM;
     }
 }
 

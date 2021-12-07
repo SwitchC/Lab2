@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hotel>
+	<people firstname="Vitaliy" secondname="Hordiychuk" patronymic="Vitaliyovich">
+		<faculty>CSC</faculty>
+		<cathedra>TK</cathedra>
+		<course>2</course>
+		<data>Nothing</data>
+	</people>
+	<people firstname="Vliy" secondname="Hordiychuk" patronymic="Vitaliyovich">
+		<faculty>CSC1</faculty>
+		<cathedra>TK1</cathedra>
+		<course>21</course>
+		<data>Nothing1</data>
+	</people>
+	<people firstname="Vitaliy" secondname="Hordiychuk" patronymic="Vitaliyovich">
+		<faculty>CSC2</faculty>
+		<cathedra>TK2</cathedra>
+		<course>22</course>
+		<data>Nothing2</data>
+	</people>
+</hotel>
